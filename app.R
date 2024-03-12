@@ -79,19 +79,19 @@ Overall, while social media enhances communication, connectivity, and entertainm
 server <- function(input, output, session) {
   
   Gender <- reactive({
-    read_excel("Social Media Dataset.xlsx")
+    read_excel("Social_Media_Dataset.xlsx")
   })
   Region <- reactive({
-    read_excel("Region Dataset.xlsx")
+    read_excel("Region_Dataset.xlsx")
   })
   Age <- reactive({
-    read_excel("AgeGroup Dataset.xlsx")
+    read_excel("AgeGroup_Dataset.xlsx")
   })
   Country <- reactive({
-    read_excel("Country Dataset.xlsx")
+    read_excel("Country_Dataset.xlsx")
   })
   Usage <- reactive({
-    read_excel("Users Dataset.xlsx")
+    read_excel("Users_Dataset.xlsx")
   })
   
   observeEvent(input$go_button, {
